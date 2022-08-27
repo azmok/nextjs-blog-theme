@@ -1,0 +1,48 @@
+---
+title: :has() セレクター、いよいよ実装間近か!?
+---
+# [css][解説] :has() セレクター、いよいよ実装間近か!?
+
+> > See the Pen [css. :has() selector demo](https://codepen.io/AzumaO/pen/rNdEMBJ) by Azmo7 ([@AzumaO](https://codepen.io/AzumaO)) on [CodePen](https://codepen.io).
+
+## 定義(Definition)
+
+`selector1:has(selector2)`
+
+### 説明
+
+'セレクター2'に該当する要素を**持ちわせている**要素で、且つその要素が'セレクター1'にマッチする場合、スタイリングが適用される。
+
+Styling is applied to elements that match 'selector1' if those elements **have** elements that match 'selector2'.
+
+## メモ
+
+1. 言語化して定義すると、抽象的過ぎて多分分かりにくいw
+2. **JS**でも**CSS**でも**仕様書**とか**使用書**等、::**抽象的な言語で定義され記述されているもの**は、**デモ(具体例)見るのが1番理解が早い**::w↑↑↑
+
+## ソース(情報源)(Sources)
+
+[:has() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:has#description)
+
+## 適応ブラウザ(Browser support)
+
+["has" | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/?search=has)
+
+おまけ
+
+翻訳って難しい、、笑
+
+どちらも同じ意味だけど、直訳すると日本語の文構造上、意味が取りにくい。翻訳作業において、意訳ってマジ大事。
+
+> > Styling is applied to elements that match 'selector1' if those elements **have** elements that match 'selector2'.
+
+> > 意訳:
+
+> > 'セレクター2'に該当する要素を**持ちわせている要素**で、且つその要素が'セレクター1'にマッチする場合、スタイリングが適用される。
+
+> > 直訳:
+
+> > 'セレクター1'にマッチする要素で、もしその要素が'セレクター2'に該当する要素を**持ちわせている**場合、('セレクター1'にマッチする要素に)スタイリングが適用される。
+
+個人的には、英語の方が「名詞←形容詞」と後から形容詞が付く言語構造的のため、「(主語)は(述語)だ」と文章の骨格が先に分かるので、この様な抽象的な定義文の場合は、英語の方が理解しやすい気がする、、（´-`）.｡oO
+
